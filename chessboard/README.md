@@ -23,3 +23,10 @@ Please contact Nick Kampa (nkampa@chess.com) with any questions or feedback rega
 - readme 
 - host
 - tests
+- Accessable
+- Controls
+- CSS vars 
+- scss
+- scoped CSS
+- Readme
+- Core web vitals

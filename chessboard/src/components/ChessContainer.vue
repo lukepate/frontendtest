@@ -27,10 +27,12 @@ export default {
       this.addMove(this.combineString(column, row));
       this.activeCell = this.combineString(column, row);
       this.hintCell = "";
-      localStorage.setItem("activeCell", JSON.stringify(this.activeCell));
+      localStorage.setItem("activeCell", JSON.stringify(this.activeCell));      
+      this.checkScroll();
     },
     addMove(move) {
       this.moveList.push(move);
+      this.checkScroll();
       localStorage.setItem("moveList", JSON.stringify(this.moveList));
     },
     moveBack() {
@@ -58,6 +60,12 @@ export default {
       this.activeCell = "";
       this.moveList = [];
       localStorage.clear();
+    },
+    checkScroll() {   
+      const scrollDiv = document.getElementById("collapse");
+      if (window.innerWidth > 920 && window.innerHeight > 920) {
+        scrollDiv.scrollIntoView({ behavior: "smooth" });
+      }
     }
   },
   components: {
@@ -70,7 +78,7 @@ export default {
 <template>
   <div class="board-container">
     <ChessBoard :maps="maps" :combineString="combineString" :addMove="addMove" :activeCell="activeCell" :hintCell="hintCell" :setActive="setActive"/>
-    <SideBar :moveList=moveList :addMove="addMove" :moveBack="moveBack" :moveForward="moveForward" :getHint="getHint" :newGame="newGame"/>
+    <SideBar :activeCell="activeCell" :moveList="moveList" :addMove="addMove" :moveBack="moveBack" :moveForward="moveForward" :getHint="getHint" :newGame="newGame"/>
   </div>
 </template>
 
