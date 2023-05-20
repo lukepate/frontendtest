@@ -8,6 +8,7 @@ export default {
     return {
       moveList: !localStorage.getItem("moveList") ? [] : JSON.parse(localStorage.moveList),
       activeCell: !localStorage.getItem("activeCell") ? "" : localStorage.getItem("activeCell").replace(/['"]+/g, ''),
+      activeIndex: !localStorage.getItem("activeIndex") ? 0 : JSON.parse(localStorage.moveList),
       hintCell: "",
       maps: {
         1: "h",
@@ -23,11 +24,15 @@ export default {
   },
   methods: {
     setActive(column, row) {
+      console.log(this.activeIndex);
       if (this.activeCell === this.combineString(column, row)) return this.activeCell = 0;
       this.addMove(this.combineString(column, row));
-      this.activeCell = this.combineString(column, row);
       this.hintCell = "";
-      localStorage.setItem("activeCell", JSON.stringify(this.activeCell));      
+      this.activeCell = this.combineString(column, row);
+      localStorage.setItem("activeCell", JSON.stringify(this.activeCell));   
+      
+      this.activeIndex++;
+      localStorage.setItem("activeIndex",  this.activeIndex);
       this.checkScroll();
     },
     addMove(move) {
