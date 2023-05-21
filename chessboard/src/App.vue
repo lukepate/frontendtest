@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ChessContainer from './components/ChessContainer.vue'
+import ChessContainer from './containers/ChessContainer.vue'
 
 export default {
   name: 'App',

@@ -2,7 +2,12 @@
 
 Welcome to the [Chess.com](https://chess.com) front end programming challenge!
 
-# Instructions
+# Instructions (To start app locally)
+1. Clone  this repository.
+2. Run `npm install`
+3. Open `http://localhost:8080/#/`
+
+# Instructions 
 1. Fork this repository.
 2. Create a VueJS application that satisfies the requirements detailed below.
 3. Provide links to your fork of this repository and a live demo of your application.
@@ -18,15 +23,3 @@ Welcome to the [Chess.com](https://chess.com) front end programming challenge!
 
 # Questions & Feedback
 Please contact Nick Kampa (nkampa@chess.com) with any questions or feedback regarding this challenge.
-
-# TODO
-- readme 
-- host
-- tests
-- Accessable
-- Controls
-- CSS vars 
-- scss
-- scoped CSS
-- Readme
-- Core web vitals

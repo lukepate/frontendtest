@@ -5,6 +5,7 @@ export default {
   name: 'SideBar',
   props: {
     activeCell: String,
+    activeIndex: Number,
     moveList: Array,
     addMove: Function,
     moveBack: Function,
@@ -34,13 +35,15 @@ export default {
       <ul class="move-list">
         <li class="move" v-for="(move, index) in moveList" :key="index">
           {{ index + 1 }}: 
-          <span :class="this.activeCell === move ? 'move-text move-active' : 'move-text'">{{ move }}</span>
+          <span :class="this.activeCell === move && this.activeIndex === index? 'move-text move-active' : 'move-text'">{{ move }}</span>
+          {{this.activeIndex}}
         </li>
         <div :id="`collapse`"></div>
       </ul>
 
     </div>
     <SideBarButtons 
+      :addMove="addMove" 
       :moveBack="moveBack" 
       :moveForward="moveForward" 
       :getHint="getHint" 
