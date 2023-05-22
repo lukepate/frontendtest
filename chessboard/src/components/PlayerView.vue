@@ -65,7 +65,7 @@ export default {
 
 .piece-container {
     display: flex;
-    padding: var(--space-xsm) var(--space-md);
+    padding: var(--space-xsm) var(--space-sm);
 }
 
 .piece {

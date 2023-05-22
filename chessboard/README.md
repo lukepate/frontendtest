@@ -5,7 +5,8 @@ Welcome to the [Chess.com](https://chess.com) front end programming challenge!
 # Instructions (To start app locally)
 1. Clone  this repository.
 2. Run `npm install`
-3. Open `http://localhost:8080/#/`
+3. Next start the server with `npm run serve`
+4. Open `http://localhost:8080/#/`
 
 # Instructions 
 1. Fork this repository.

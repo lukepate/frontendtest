@@ -130,10 +130,12 @@ export default {
         width: 84vw;
         height: 84vw;
         max-width: 100%;
-        margin: 168px var(--space-xl);
+        margin: 180px var(--space-xl);
+        min-height: 100%;
       }
       .move-list {
         padding-bottom: 0;
+        max-height: 360px;
       }
   }
 </style>
