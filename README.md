@@ -7,6 +7,14 @@ Welcome to the [Chess.com](https://chess.com) front end programming challenge!
 2. Create a VueJS application that satisfies the requirements detailed below.
 3. Provide links to your fork of this repository and a live demo of your application.
 
+# Instructions (To start app locally)
+1. Clone  this repository.
+2. Change to the vue codes directory `cd chessboard`
+3. Run `yarn install`
+4. Next start the server with `yarn run serve`
+5. Open `http://localhost:8080/#/`
+
+
 # Application Requirements
 1. Create a page with a chessboard and a sidebar.
 2. On desktop devices the sidebar should be positioned to the right of the chessboard.
