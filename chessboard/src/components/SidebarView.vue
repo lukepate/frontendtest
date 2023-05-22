@@ -25,7 +25,7 @@ export default {
       <img alt="User Avatar" src="https://images.chesscomfiles.com/uploads/v1/user/66746068.6b0443e7.200x200o.431299f833ac.png" data-cy="chat-message-avatar" width="75" height="75" class="user-image" />
       <div class="chat-bubble-container">
         <div class="down-arrow"></div>
-        <div class="chat-bubble">Hello, Pls hire me!</div>
+        <div class="chat-bubble">Hello, Pls make a move</div>
       </div>
     </div>
       <div class="opening">
