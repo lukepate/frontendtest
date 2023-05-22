@@ -35,13 +35,13 @@ export default {
             rating="2775"
             img="https://images.chesscomfiles.com/uploads/v1/master_player/5c8147c2-bd7f-11e8-863f-15ded6970bf6.00cda418.250x250o.1040af1a37a1.png" 
             :pieces="[
-                'piece fas fa-chess-bishop black',
-                'piece fas fa-chess-bishop black',
-                'piece fas fa-chess-knight black',
-                'piece fas fa-chess-knight black',
-                'piece fas fa-chess-rook black',
-                'piece fas fa-chess-rook black',
-                'piece fas fa-chess-queen black',
+                'piece fa-solid fa-chess-bishop-piece black',
+                'piece fa fa-chess-bishop black',
+                'piece fa fa-chess-knight black',
+                'piece fa fa-chess-knight black',
+                'piece fa fa-chess-rook black',
+                'piece fa fa-chess-rook black',
+                'piece fa fa-chess-queen black',
             ]"
         />
         <div v-for="column in 8" :key="column" class="flex-container">

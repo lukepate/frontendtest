@@ -36,7 +36,6 @@ export default {
         <li class="move" v-for="(move, index) in moveList" :key="index">
           {{ index + 1 }}: 
           <span :class="this.activeCell === move && this.activeIndex === index? 'move-text move-active' : 'move-text'">{{ move }}</span>
-          {{this.activeIndex}}
         </li>
         <div :id="`collapse`"></div>
       </ul>
