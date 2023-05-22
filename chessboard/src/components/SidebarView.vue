@@ -135,7 +135,8 @@ export default {
       }
       .move-list {
         padding-bottom: 0;
-        max-height: 360px;
+        margin: 0;
+        max-height: 300px;
       }
   }
 </style>
