@@ -102,7 +102,7 @@ export default {
   } 
   .chat-bubble{
     background-color: var(--main-dark-3);
-    padding: var(--space-lg);
+    padding: var(--space-md);
     border-radius: var(--space-md);
     margin-left: -6px;
   }
